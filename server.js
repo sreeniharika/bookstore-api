@@ -12,10 +12,7 @@ dotenv.config();
 const app = express();
 
 
-//db
-mongoose.connect(process.env.DATABASE,{})
-.then(()=>console.log(`DB Connected`))
-.catch((err)=>console.log(`DB connection error`,err));
+
 
 
 app.use(cors());
